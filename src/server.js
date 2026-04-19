@@ -14,7 +14,7 @@ async function start() {
   server.route([
     {
       method: 'GET',
-      path: '/',
+      path: '/home',
       handler: () => ({ success: true, data: { message: 'Hello World Fajar yaa !' } }),
     },
     {
