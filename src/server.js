@@ -15,6 +15,11 @@ async function start() {
     {
       method: 'GET',
       path: '/',
+      handler: () => ({ success: true, data: { message: 'Hello World Fajar yaa !' } }),
+    },
+    {
+      method: 'GET',
+      path: '/',
       handler: () => ({ success: true, data: { message: 'Hello World!' } }),
     },
     {
