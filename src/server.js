@@ -14,6 +14,11 @@ async function start() {
   server.route([
     {
       method: 'GET',
+      path: '/server',
+      handler: () => ({ success: true, data: { message: 'Hello ini halaman server !' } }),
+    },
+    {
+      method: 'GET',
       path: '/coding',
       handler: () => ({ success: true, data: { message: 'Hello ini halaman coding !' } }),
     },
